@@ -1,0 +1,23 @@
+.benefits {
+
+  &__title {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+  }
+
+  &__item {
+    grid-column: 4 span;
+    max-width: 360px;
+  }
+
+  &__subtitle {
+  }
+
+  &__descr {
+  }
+
+}
