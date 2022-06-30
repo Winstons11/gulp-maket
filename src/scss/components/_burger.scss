@@ -1,6 +1,10 @@
+.burger {
+  display: none;
+}
+
 @include high-tablet {
   .burger {
-    // display: none;
+    display: block;
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 10px;
