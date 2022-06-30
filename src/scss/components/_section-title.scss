@@ -1,0 +1,13 @@
+.section-title {
+  margin: 0;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 160%;
+  color: var(--color-dark);
+
+  @include high-desktop {
+    text-align: center;
+  }
+}

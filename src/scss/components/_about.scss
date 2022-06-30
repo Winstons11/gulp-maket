@@ -1,6 +1,4 @@
 .about {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-color: var(--color-light);
 
   &__descr {
@@ -15,16 +13,27 @@
     &-hightlight {
       font-weight: 600;
     }
+
+    @include high-desktop {
+      max-width: none;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+
   }
 
   &__item {
     grid-column: 3 span;
+
+    @include high-desktop {
+      grid-column: 6 span;
+      text-align: center;
+    }
   }
 
   &__digit {
@@ -32,6 +41,8 @@
     font-size: 70px;
     line-height: 160%;
     color: var(--color-red);
+
+
   }
 
   &__text {

@@ -1,6 +1,8 @@
 .benefits {
+  background-color: #f9f9f9;
 
-  &__title {
+  .section-title {
+    margin-top: 0;
   }
 
   &__list {
@@ -11,13 +13,28 @@
 
   &__item {
     grid-column: 4 span;
-    max-width: 360px;
+
+    @include high-desktop {
+      grid-column: 6 span;
+      text-align: center;
+    }
   }
 
   &__subtitle {
+    display: inline-flex;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--color-dark);
   }
 
   &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--color-text);
   }
-
 }
