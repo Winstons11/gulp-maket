@@ -9,16 +9,31 @@
     padding: 87px 60px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    @include mobile {
+      padding: 40px 10px;
+    }
   }
 
   &__left {
     grid-column: 5 span;
+
+    @include high-tablet {
+      margin-bottom: 40px;
+      grid-column: 12 span;
+      text-align: center;
+    }
   }
 
   &__right {
     display: flex;
     justify-content: flex-end;
     grid-column: 7 span;
+
+    @include high-tablet {
+      grid-column: 12 span;
+      justify-content: center;
+    }
   }
 
   &__form {
@@ -32,6 +47,15 @@
     font-size: 36px;
     line-height: 130%;
     color: var(--color-light);
+
+    @include high-desktop {
+      font-size: 32px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+      line-height: 140%;
+    }
   }
 
   &__descr {
@@ -40,7 +64,11 @@
     font-size: 20px;
     line-height: 130%;
     color: var(--color-light);
+
+    @include mobile {
+      padding: 0 25px;
+      font-size: 16px;
+      line-height: 160%;
+    }
   }
-
-
 }

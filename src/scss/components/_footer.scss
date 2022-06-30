@@ -6,10 +6,15 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   &__logo {
-    display: inline-block;
     margin-bottom: 20px;
   }
 
@@ -18,5 +23,12 @@
     font-size: 16px;
     line-height: 160%;
     color: rgba(255, 255, 255, 0.7);
+  }
+
+  .phone {
+    @include mobile {
+      margin-top: 20px;
+      display: block;
+    }
   }
 }

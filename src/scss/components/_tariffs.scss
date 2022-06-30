@@ -5,6 +5,14 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @include tablet {
+      gap: 20px;
+    }
+
+    @include small-tablet {
+    grid-template-columns: repeat(8, 1fr);
+    }
   }
 
   &__item {
@@ -38,6 +46,11 @@
     @include high-desktop {
       transform: scale(1);
     }
+
+    @include small-tablet {
+      grid-column: 8 span;
+      justify-items: center;
+    }
   }
 
   &__subtitel {
@@ -67,6 +80,10 @@
       height: 4px;
       background-color: currentColor;
     }
+
+    @include high-tablet {
+      margin-bottom: 40px;
+    }
   }
 
   &__price {
@@ -79,6 +96,10 @@
 
     @include high-desktop {
       font-size: 45px;
+    }
+
+    @include high-tablet {
+      font-size: 33px;
     }
   }
 
@@ -95,5 +116,11 @@
   &__btn {
     margin-top: 60px;
     min-width: 100%;
+
+    @include high-tablet {
+      margin-top: 40px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
   }
 }

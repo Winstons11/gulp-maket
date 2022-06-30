@@ -9,6 +9,10 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @include mobile {
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -18,9 +22,14 @@
       grid-column: 6 span;
       text-align: center;
     }
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
   }
 
   &__subtitle {
+    position: relative;
     display: inline-flex;
     margin: 0;
     margin-bottom: 20px;

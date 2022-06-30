@@ -17,6 +17,10 @@
     @include high-desktop {
       max-width: none;
     }
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__list {
@@ -24,7 +28,9 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
 
-
+    @include mobile {
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -34,6 +40,10 @@
       grid-column: 6 span;
       text-align: center;
     }
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
   }
 
   &__digit {
@@ -42,7 +52,9 @@
     line-height: 160%;
     color: var(--color-red);
 
-
+    @include mobile {
+      font-size: 60px;
+    }
   }
 
   &__text {
@@ -51,5 +63,9 @@
     font-size: 18px;
     line-height: 160%;
     color: var(--color-text);
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 }
