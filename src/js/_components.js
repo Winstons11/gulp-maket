@@ -4,3 +4,4 @@ import './components/modals';
 import './components/slider';
 import './components/validation';
 import './components/tabs';
+import './components/scroll-bar';
